@@ -27,7 +27,13 @@ header h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonteheader);
-    font-size: 10vh;
+    font-size: 55px;
+    letter-spacing: 5px;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px  2px 0 #000,
+        2px  2px 0 #000;
 }
 
 header p {
@@ -67,6 +73,14 @@ section.imagem >p {
     display: inline-block;
     padding: 20px;
     background-color: #02065952;
+}
+
+section#01 {
+    background-image: url(../imagens/arara-png.jpg);
+}
+
+section#02 {
+    background-image: url('../imagens/araras-vermelha-png.jpg');
 }
 
 footer {
