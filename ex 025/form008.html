@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>exemplos de formularios</h1>
+    <p>
+        <form oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        <input type="number" name="n1" id="in1" value="0"> +
+        <input type="number" name="n2" id="in2" value="0"> =
+        <output name="soma" id="isoma">0</output>
+    </p>
+
+</form>
+<form action="">
+    <p>
+        <label for="ibarra">numero:</label>
+        <input type="range" name="barra" id="ibarra" min="0" max="50" value="25" oninput="isoma.innerHTML = Number(this.value)">
+        <output id="isoma">25</output>
+    </p>
+</form>
+
+<form action="">
+<p>
+    <label for="iano">em que ano voce nasceu</label>
+    <input type="number" name="ano" id="iano" min="1900" max="2026" oninput="calcidade()">
+</p>
+
+<p>
+    <label for="iidade">sua idade</label>
+    <output id="iidade">0</output>
+</p>
+</form>
+
+<script>
+    function calcidade() {
+        let atual = new date().getfullyear()
+        iidade.innerHTML = number(atual) - number(iano-value)    
+        }
+</script>
+
+
+</body>
+</html>

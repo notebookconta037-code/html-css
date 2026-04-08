@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* estilo para tela */
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}

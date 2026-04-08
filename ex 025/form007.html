@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario007</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <option value="sp">sao paulo</option>
+                <option value="mg">minas gerais</option>
+                <option value="rj">rio de janeiro</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprofi">Profissoes</label>
+            <input type="text" name="profi" id="
+            iprofi" list="liprofi">
+            <datalist id="liprofi">
+                <option>Policial</option>
+                <option>Jardineiro</option>
+                <option>Cozinheiro</option>
+                <option>Jogador</option>
+                <option>cabaleleiro</option>
+                <option>barbeiro</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="20" rows="2">
+            </textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Envar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
