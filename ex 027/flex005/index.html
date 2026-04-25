@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(172, 90, 90);
+        }
+
+        main {
+            background-color: burlywood;
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+        }
+
+        @media  screen and (min-width: 800px) {
+            section {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>tela de login</h1>
+        </section>
+    </main>
+</body>
+</html>
