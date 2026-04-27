@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando sobre flex box</title>
+    <style>
+        div.container {
+            background-color: brown;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: blue;
+            border: 2px solid black;
+            text-align: center;
+        }
+        
+        div#cxA {
+            flex: 0 1 200px;
+        }
+        div#cxB {
+            flex: 1 1 150px;
+        }
+        div#cxC {
+            flex: 1 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">a</div>
+        <div class="item" id="cxB">b</div>
+        <div class="item" id="cxC">c</div>
+    </div>
+</body>
+</html>
